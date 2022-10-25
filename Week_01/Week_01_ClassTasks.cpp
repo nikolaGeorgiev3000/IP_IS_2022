@@ -6,7 +6,6 @@ using std::endl;
 
 int main()
 {
-     // Testing Git...
      // Remove the opening /* and the according */ closing tabs in order to run a TASK
      // TASK 0
      /* cout << "Hello C++" << endl; */
