@@ -7,11 +7,15 @@ using std::endl;
 
 bool isPrime(int n)
 {
-    if (n == 0 || n == 1)
+    if (n == 2)
+    {
+        return true;
+    }
+    if (n == 0 || n == 1 || n % 2 == 0) // 0, 1 and any even number (besides 2) is not prime
     {
         return false;
     }
-    for (int i = 2; i < sqrt(n); ++i)
+    for (int i = 3; i < sqrt(n); i += 2) // we skip the even numbers > 2
     {
         if (n % i == 0)
         {
