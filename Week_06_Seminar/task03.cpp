@@ -15,7 +15,7 @@ bool isPrime(int n)
     {
         return false;
     }
-    for (int i = 3; i < sqrt(n); i += 2) // we skip the even numbers > 2
+    for (int i = 3; i <= sqrt(n); i += 2) // we skip the even numbers > 2
     {
         if (n % i == 0)
         {
