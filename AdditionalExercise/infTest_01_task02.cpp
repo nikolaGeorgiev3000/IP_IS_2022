@@ -25,7 +25,7 @@ int main()
                 impDigit = prevDigit;
             }
             counter = 1;
-            prevDigit = n % 10;
+            prevDigit = currentDigit;
         }
         n /= 10;
     }
