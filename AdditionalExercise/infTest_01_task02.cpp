@@ -22,7 +22,6 @@ int main()
             if (counter > currentBiggest)
             {
                 currentBiggest = counter;
-                counter = 0;
                 impDigit = prevDigit;
             }
             counter = 1;
@@ -33,7 +32,6 @@ int main()
     if (counter > currentBiggest) // taking care of the longest subNumber in the beginning of a number
     {
         currentBiggest = counter;
-        counter = 0;
         impDigit = prevDigit;
     }
     cout << "Length: " << currentBiggest << " Digit: (" << impDigit << ")";
