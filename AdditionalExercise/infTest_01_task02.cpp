@@ -11,7 +11,6 @@ int main()
     n /= 10;
     while (n)
     {
-
         long long currentDigit = n % 10;
         if (prevDigit == currentDigit)
         {
